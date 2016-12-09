@@ -1,5 +1,5 @@
 # miuiDOMTab
-# demo view #
+demo view:
 ![image](https://github.com/PhotoArtLife/miuiDOMTab/blob/master/images/dom.gif)
 
 version  0.0.1 目前还不支持链式调用，想在下一个版本更新
@@ -9,10 +9,16 @@ version  0.0.1 目前还不支持链式调用，想在下一个版本更新
 
 基于原生js和css实现一款垂直操作的选项卡
 # 引用方式：
-
+```javascript
 <scipt type="miuiDOM.js"></scipt></script>
+```
+或：
+```javascript
+require miuiDOM from '/path/miuiDOM.js'
+```
 
-git clone  git@github.com:PhotoArtLife/miuiDOMTab.git
+```javascript
+git clone git@github.com:PhotoArtLife/miuiDOMTab.git
 
 addClass：miuiDOM.addClass( "#content ul li:first-child", "red" );
 
@@ -26,5 +32,4 @@ miuiDOM.hasClass( "#content ul li", "green", function() {
     console.log( "有这样的Class" );
 });
 返回值为true或false
-
-
+```
