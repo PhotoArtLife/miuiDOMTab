@@ -1,0 +1,173 @@
+html, body {
+	  margin: 0;
+	  padding: 0;
+	  width: 100%;
+	  /*height: 100%;*/
+	  background-color: #eee;
+	  font-family: 'Raleway';
+	}
+	ul, li {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	}
+
+	.icon {
+	  position: relative;
+	  font-size: 2em;
+	  display: block;
+	  fill: rgba(51, 51, 51, 0.5);
+	  margin-right: 20px;
+	  -webkit-transition: all .2s ease-out;
+	          transition: all .2s ease-out;
+	}
+
+	.icon.active {
+	  fill: #E74C3C;
+	}
+
+	.icon.big {
+	  width: 64px;
+	  height: 64px;
+	  fill: rgba(51, 51, 51, 0.5);
+	}
+
+	#wrapper {	
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	  background-color: #fff;
+	  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-align: center;
+	  -webkit-align-items: center;
+	      -ms-flex-align: center;
+	          align-items: center;
+	  -webkit-box-pack: left;
+	  -webkit-justify-content: left;
+	      -ms-flex-pack: left;
+	          justify-content: left;
+	  overflow: hidden;
+	}
+
+	#right-role-box {
+	  height: 100%;
+	  width: 8%;
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-align: center;
+	  -webkit-align-items: center;
+	      -ms-flex-align: center;
+	          align-items: center;
+	  -webkit-box-pack: center;
+	  -webkit-justify-content: center;
+	      -ms-flex-pack: center;
+	          justify-content: center;
+	}
+	#right-role-box ul li {
+	  padding : 100% 0;
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  line-height: 34px;
+	  color: rgba(51, 51, 51, 0.5);
+	  font-weight: 500;
+	  cursor: pointer;
+	  -webkit-transition: all .2s ease-out;
+	          transition: all .2s ease-out;
+	}
+	#right-role-box ul li:hover {
+	  color: #333333;
+	  -webkit-transition: all .2s ease-out;
+	          transition: all .2s ease-out;
+	}
+	#right-role-box ul li:hover > .icon {
+	  fill: #333;
+	}
+	#right-role-box ul li.active {
+	  color: #333333;
+	}
+	#right-role-box ul li.active:hover > .icon {
+	  fill: #E74C3C;
+	}
+
+	#border-tips {
+	  height: 100%;
+	  width: 2px;
+	  background-color: rgba(51, 51, 51, 0.2);
+	}
+	#border-tips #line.one {
+	  position: absolute;
+	  width: 5px;
+	  height: 50%;
+	  background-color: #E74C3C;
+	  margin-left: -2px;
+	  -webkit-transition: all .4s ease-in-out;
+	          transition: all .4s ease-in-out;
+	}
+	#border-tips #line.two {
+	  position: absolute;
+	  width: 5px;
+	  height: 50%;
+	  top: 50%;
+	  background-color: #E74C3C;
+	  margin-left: -2px;
+	  -webkit-transition: all .4s ease-in-out;
+	          transition: all .4s ease-in-out;
+	}
+	
+
+	#left-access-box {
+	  height: 100%;
+	  width: 92%;
+	  overflow: hidden;
+	}
+	#left-access-box #nav-first, #left-access-box #nav-second {
+	  position: absolute;
+	  -webkit-transition: all .6s ease-in-out;
+	          transition: all .6s ease-in-out;
+	  margin-top: -50%;
+	  opacity: 0;
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-align: center;
+	  -webkit-align-items: center;
+	      -ms-flex-align: center;
+	          align-items: center;
+	  -webkit-box-pack: center;
+	  -webkit-justify-content: center;
+	      -ms-flex-pack: center;
+	          justify-content: center;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -webkit-flex-direction: column;
+	      -ms-flex-direction: column;
+	          flex-direction: column;
+	}
+	#left-access-box #nav-first h1, #left-access-box #nav-second h1 {
+	  font-weight: 800;
+	  color: #333;
+	}
+	#left-access-box #nav-first p, #left-access-box #nav-second p {
+	  color: #333;
+	  font-weight: 500;
+	  padding-left: 30px;
+	  padding-right: 30px;
+	}
+	#left-access-box #nav-first.active, #left-access-box #nav-second.active {
+	  margin-top: 0px;
+	  opacity: 1;
+	  -webkit-transition: all .6s ease-in-out;
+	          transition: all .6s ease-in-out;
+	}
