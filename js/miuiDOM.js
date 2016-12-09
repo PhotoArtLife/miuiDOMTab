@@ -1,10 +1,9 @@
 /* *
  * miuiDom - addClass / removeClass / toggleClass / hasClass
  * version  0.0.1 目前还不支持链式调用，想在下一个版本更新
- * 在一些小组件上面，React操作确实不便，便有了这个简单的class选择和添加删除器，复杂页面不推荐使用，推荐小tab，小提示
-
- */
-
+ * MIT from Mich@PhotoArtLife
+ * 在一些小组件上面，React操作确实不便，便有了这个简单的class选择和添加删除器，可以直接拿过来用，推荐小tab，小提示
+* */
 var miuiDOM = (function() {
     'use strict';
 
