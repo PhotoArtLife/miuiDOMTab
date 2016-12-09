@@ -57,7 +57,7 @@
 <script type="text/javascript" src="js/miuiDOM.js"></script>
 <script type="text/javascript">
 	document.getElementById("first").addEventListener("click",function(){
-		miuiDOM.addClass(".nav1","active");
+		  miuiDOM.addClass(".nav1","active");
 	    miuiDOM.addClass(".nav1 > .icon","active");
 	    miuiDOM.removeClass(".nav2","active");
 	    miuiDOM.removeClass(".nav2 > .icon","active");
@@ -67,15 +67,15 @@
 	    miuiDOM.addClass("#nav-first","active");
 	},false);  //false- 默认。事件句柄在冒泡阶段执行
 	document.getElementById("second").addEventListener("click",function(){
-       miuiDOM.addClass(".nav2","active");
-       miuiDOM.addClass(".nav2 > .icon","active");
-       miuiDOM.removeClass(".nav1","active");
-       miuiDOM.removeClass(".nav1 > .icon","active");
-       miuiDOM.addClass("#line","two");
-       miuiDOM.removeClass("#line","one");
-       miuiDOM.removeClass("#nav-first","active");
-       miuiDOM.addClass("#nav-second","active");
-	},false);  //false- 默认。事件句柄在冒泡阶段执行	
+      miuiDOM.addClass(".nav2","active");
+      miuiDOM.addClass(".nav2 > .icon","active");
+      miuiDOM.removeClass(".nav1","active");
+      miuiDOM.removeClass(".nav1 > .icon","active");
+      miuiDOM.addClass("#line","two");
+      miuiDOM.removeClass("#line","one");
+      miuiDOM.removeClass("#nav-first","active");
+      miuiDOM.addClass("#nav-second","active");
+	},false);  
 </script>
 </body>
 </html>
