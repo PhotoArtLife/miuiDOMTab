@@ -15,6 +15,8 @@ version  0.0.1 目前还不支持链式调用，想在下一个版本更新
 或：
 ```javascript
 require miuiDOM from '/path/miuiDOM.js'
+
+import miuiDOM from '/path/miuiDOM.js'
 ```
 
 ```javascript
